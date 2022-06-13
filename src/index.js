@@ -1,6 +1,19 @@
 // complete the function
 function prime (num) {
-  // code goes here
+  // code here
+  // number less than two
+
+  if (num < 2) {
+    return false;
+  }
+
+  // modulus (remainder)
+  for (let i = 2;i<num;i++){
+if( num % i === 0) {
+  return false;
+}
+  }
+  return true;
 }
 
 function solution (arg) {
@@ -16,4 +29,5 @@ if (typeof require !== "undefined" && require.main === module) {
   console.log(solution(arg));
 }
 
-module.exports = { solution };
+//module.exports = { solution };
+console.log (prime (8));
