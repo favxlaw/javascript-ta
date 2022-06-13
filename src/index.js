@@ -31,3 +31,6 @@ if (typeof require !== "undefined" && require.main === module) {
 
 //module.exports = { solution };
 console.log (prime (8));
+console.log(prime(1));
+console.log(prime(2));
+console.log(prime(11));
